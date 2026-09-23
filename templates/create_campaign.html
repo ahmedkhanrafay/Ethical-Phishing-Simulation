@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="page-card">
+
+    <h2 class="page-title">Create Simulation Campaign</h2>
+
+    <p class="page-subtitle">
+        Create a controlled campaign for authorized security awareness testing.
+    </p>
+
+    <div class="form-card">
+
+        <form method="POST">
+
+            <label>Campaign Name</label>
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Example: Security Awareness Test"
+                required
+            >
+
+            <label>Description</label>
+
+            <textarea
+                name="description"
+                rows="5"
+                placeholder="Enter the purpose of this simulation"
+            ></textarea>
+
+            <br><br>
+
+            <button type="submit">
+                Create Campaign
+            </button>
+
+        </form>
+
+    </div>
+
+    <div class="info-box">
+
+        <h3>Safety Notice</h3>
+
+        <p>
+            Use only fictional or authorized test recipients.
+            Do not collect real passwords, credentials, banking
+            information, or other sensitive data.
+        </p>
+
+    </div>
+
+</div>
+
+{% endblock %}

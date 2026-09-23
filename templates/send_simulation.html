@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="page-card">
+
+    <h2 class="page-title">Send Simulation</h2>
+
+    <p class="page-subtitle">
+        Launch an authorized security awareness simulation using a fictional test recipient.
+    </p>
+
+    <div class="form-card">
+
+        <form method="POST">
+
+            <label>Campaign</label>
+
+            <select name="campaign_id" required>
+                <option value="1">Security Awareness Test</option>
+            </select>
+
+            <label>Test Recipient</label>
+
+            <select name="recipient_id" required>
+                <option value="1">
+                    Rafay Test — rafay@example.test
+                </option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">
+                Send Simulation
+            </button>
+
+        </form>
+
+    </div>
+
+    <div class="info-box">
+
+        <h3>AUTHORIZED SECURITY AWARENESS SIMULATION</h3>
+
+        <p>
+            This project uses fictional test recipients and does not
+            send messages to real external users.
+        </p>
+
+        <p>
+            No passwords, credentials, banking information, or sensitive
+            personal information are collected.
+        </p>
+
+    </div>
+
+</div>
+
+{% endblock %}

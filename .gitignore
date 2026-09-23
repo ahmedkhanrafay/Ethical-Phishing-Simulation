@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+phishing_simulation.db
+phishing_simulation_backup.db
+.vscode/
+.env

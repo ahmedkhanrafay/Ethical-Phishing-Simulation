@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="page-card">
+
+    <h2 class="page-title">Security Awareness Training</h2>
+
+    <p class="page-subtitle">
+        Review what to look for when identifying a suspicious message.
+    </p>
+
+    <div class="training-card">
+
+        <p class="simulation-label">
+            AUTHORIZED SECURITY AWARENESS SIMULATION
+        </p>
+
+        <h3>You've reached the training page.</h3>
+
+        <p>
+            This was a simulated phishing exercise designed to improve
+            security awareness.
+        </p>
+
+        <h3>What should you have checked?</h3>
+
+        <ul>
+            <li>Verify the sender's email address.</li>
+            <li>Be cautious of unexpected requests.</li>
+            <li>Check links before clicking.</li>
+            <li>Watch for urgent or suspicious language.</li>
+            <li>Never provide passwords through suspicious messages.</li>
+        </ul>
+
+        <div class="warning-box">
+
+            <strong>No password or sensitive information was collected.</strong>
+
+            <p>
+                This training environment is designed only for authorized
+                educational use.
+            </p>
+
+        </div>
+
+        <br>
+
+        <a href="/track/TRAINING_INTERACTION">
+            <button type="button">
+                Complete Training
+            </button>
+        </a>
+
+        <br><br>
+
+        <a href="/track/CAMPAIGN_COMPLETED">
+            Finish Simulation
+        </a>
+
+    </div>
+
+</div>
+
+{% endblock %}

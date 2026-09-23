@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="page-card">
+
+    <h2 class="page-title">Campaigns</h2>
+
+    <p class="page-subtitle">
+        Manage authorized security awareness simulation campaigns.
+    </p>
+
+    <table>
+
+        <tr>
+            <th>Campaign Name</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Created</th>
+        </tr>
+
+        {% for campaign in campaigns %}
+
+        <tr>
+            <td><strong>{{ campaign[1] }}</strong></td>
+            <td>{{ campaign[2] }}</td>
+            <td>{{ campaign[3] }}</td>
+            <td>{{ campaign[4] }}</td>
+        </tr>
+
+        {% else %}
+
+        <tr>
+            <td colspan="4">
+                No campaigns created yet.
+            </td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+    <div class="info-box">
+
+        <h3>Campaign Safety</h3>
+
+        <p>
+            Campaigns are intended only for authorized security
+            awareness training in a controlled environment.
+        </p>
+
+    </div>
+
+</div>
+
+{% endblock %}

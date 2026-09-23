@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="page-card">
+
+    <h2 class="page-title">Simulation Analytics</h2>
+
+    <p class="page-subtitle">
+        Review measurable results from the authorized security awareness simulation.
+    </p>
+
+    <div class="analytics-grid">
+
+        <div class="analytics-card">
+            <h3>Emails Simulated</h3>
+            <div class="metric">{{ sent }}</div>
+        </div>
+
+        <div class="analytics-card">
+            <h3>Emails Opened</h3>
+            <div class="metric">{{ opened }}</div>
+        </div>
+
+        <div class="analytics-card">
+            <h3>Links Clicked</h3>
+            <div class="metric">{{ clicked }}</div>
+        </div>
+
+        <div class="analytics-card">
+            <h3>Training Interactions</h3>
+            <div class="metric">{{ training }}</div>
+        </div>
+
+    </div>
+
+    <h3>Simulation Rates</h3>
+
+    <table>
+
+        <tr>
+            <th>Metric</th>
+            <th>Rate</th>
+        </tr>
+
+        <tr>
+            <td>Open Rate</td>
+            <td><strong>{{ open_rate }}%</strong></td>
+        </tr>
+
+        <tr>
+            <td>Click Rate</td>
+            <td><strong>{{ click_rate }}%</strong></td>
+        </tr>
+
+        <tr>
+            <td>Training Completion Rate</td>
+            <td><strong>{{ completion_rate }}%</strong></td>
+        </tr>
+
+    </table>
+
+    <div class="info-box">
+
+        <h3>Simulation Metrics</h3>
+
+        <p>
+            These figures represent authorized security awareness
+            simulation activity only. They are not real-world phishing
+            statistics.
+        </p>
+
+    </div>
+
+</div>
+
+{% endblock %}

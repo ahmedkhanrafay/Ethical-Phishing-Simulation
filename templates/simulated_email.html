@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="page-card">
+
+    <h2 class="page-title">Simulated Email</h2>
+
+    <p class="page-subtitle">
+        Review the fictional message used in this security awareness exercise.
+    </p>
+
+    <div class="training-card">
+
+        <p class="simulation-label">
+            AUTHORIZED SECURITY AWARENESS SIMULATION
+        </p>
+
+        <div class="email-header">
+
+            <p><strong>From:</strong> Security Training Team</p>
+
+            <p><strong>To:</strong> Rafay Test</p>
+
+            <p><strong>Subject:</strong> Security Awareness Notification</p>
+
+        </div>
+
+        <hr>
+
+        <p>
+            This is a fictional security awareness message used for training.
+        </p>
+
+        <p>
+            Please review the information carefully before continuing.
+        </p>
+
+        <div class="warning-box">
+
+            <strong>Training Notice</strong>
+
+            <p>
+                This message is part of an authorized local simulation.
+                No real email is being sent.
+            </p>
+
+        </div>
+
+        <br>
+
+        <a href="/track/LINK_CLICKED">
+            <button type="button">
+                Review Training Message
+            </button>
+        </a>
+
+    </div>
+
+</div>
+
+{% endblock %}

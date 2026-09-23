@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ethical Phishing Simulation Platform</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header class="top-header">
+
+        <div class="brand">
+            <div class="brand-icon">🛡</div>
+
+            <div>
+                <h1>Ethical Phishing Simulation</h1>
+                <span>Security Awareness Platform</span>
+            </div>
+        </div>
+
+        <div class="authorization-badge">
+            <span class="status-dot"></span>
+            AUTHORIZED SECURITY AWARENESS SIMULATION
+        </div>
+
+    </header>
+
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a href="/"
+               class="nav-link {% if request.endpoint == 'dashboard' %}active{% endif %}">
+                Dashboard
+            </a>
+
+            <a href="/campaigns"
+               class="nav-link {% if request.endpoint == 'campaigns' %}active{% endif %}">
+                Campaigns
+            </a>
+
+            <a href="/create-campaign"
+               class="nav-link {% if request.endpoint == 'create_campaign' %}active{% endif %}">
+                Create Campaign
+            </a>
+
+            <a href="/recipients"
+               class="nav-link {% if request.endpoint == 'recipients' %}active{% endif %}">
+                Recipients
+            </a>
+
+            <a href="/send-simulation"
+               class="nav-link {% if request.endpoint == 'send_simulation' %}active{% endif %}">
+                Send Simulation
+            </a>
+
+            <a href="/education"
+               class="nav-link {% if request.endpoint == 'education' %}active{% endif %}">
+                Education
+            </a>
+
+            <a href="/analytics"
+               class="nav-link {% if request.endpoint == 'analytics' %}active{% endif %}">
+                Analytics
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <main class="page-container">
+
+        {% block content %}
+        {% endblock %}
+
+    </main>
+
+
+    <footer class="footer">
+
+        <p>
+            Ethical Phishing Simulation Platform
+            <span>•</span>
+            Local Educational Environment
+        </p>
+
+        <p class="footer-warning">
+            No real passwords or sensitive information are collected.
+        </p>
+
+    </footer>
+
+</body>
+</html>

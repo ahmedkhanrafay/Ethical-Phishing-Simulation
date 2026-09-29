@@ -470,17 +470,13 @@ git init
 git add .
 git commit -m "Initial project"
 git branch -M main
-git remote add origin YOUR_GITHUB_REPOSITORY_URL
+git remote add origin https://github.com/ahmedkhanrafay/Ethical-Phishing-Simulation
 git push -u origin main
 ```
 
-Replace:
-
 ```text
-YOUR_GITHUB_REPOSITORY_URL
+https://github.com/ahmedkhanrafay/Ethical-Phishing-Simulation
 ```
-
-with the URL of your GitHub repository.
 
 ## 21. Conclusion
 
